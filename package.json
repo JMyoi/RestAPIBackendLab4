@@ -1,0 +1,20 @@
+{
+  "name": "csc436project4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "Jay Chen",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1",
+    "lowdb": "^7.0.1",
+    "nodemon": "^3.1.11",
+    "uuid": "^13.0.0"
+  }
+}
