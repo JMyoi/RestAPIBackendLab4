@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "0651991b-4918-44e8-9f84-5f286bd575b6",
+		"name": "Jobs REST API test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28379540",
+		"_collection_link": "https://www.postman.com/postedmanjay/workspace/j-b/collection/28379540-0651991b-4918-44e8-9f84-5f286bd575b6?action=share&source=collection_link&creator=28379540"
+	},
+	"item": [
+		{
+			"name": "getAllJobs",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "get job by id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "create new job",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n      \"employerName\": \"The DYO Inc.\",\n      \"jobTitle\": \"Junior Software Engineer\",\n      \"jobLocation\": \"New York\",\n      \"jobSalary\": 70000,\n      \"jobLink\": \"https://app.joinhandshake.com/e/988295\",\n      \"jobDescription\": \"We're looking for a Junior Software Engineer to join our team and contribute to an exciting project that combines modern web technologies with 3D visualization and e-commerce capabilities\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/job",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"job"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n      \"employerName\": \"Google\",\n      \"RejectedAt\": \"December 1, 2025\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/job/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"job",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/job/f6bb8c3d-3bf7-4848-83f8-8da356b874c7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"job",
+						"f6bb8c3d-3bf7-4848-83f8-8da356b874c7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
